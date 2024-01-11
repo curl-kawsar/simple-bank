@@ -1,0 +1,58 @@
+.gradient-bg {
+    background: linear-gradient(45deg, #34d399, #2c6cb5);
+}
+
+.gradient-bg2 {
+    background: linear-gradient(120deg, #ff6b6b, #6078ea);
+}
+
+.gradient-bg3 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.gradient-bg4 {
+    background-image: linear-gradient(to right, #6b74d1, #5e6cc7, #5163bc, #435bb2, #3553a8, #3b53ae, #4253b3, #4953b8, #6959cc, #8b5dde, #ae5fee, #d25ffb);
+}
+
+.gradient-bg5 {
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.myButton {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background-color:transparent;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.box {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+    filter: blur(10px);
+    transform: translate3d(0px, 0px, -1px);
+    clip-path: polygon(-100vmax -100vmax, 100vmax -100vmax, 100vmax 100vmax, -100vmax 100vmax, -100vmax -100vmax, 0 0, 0 100%, 100% 100%, 100% 0, 0 0);
+    pointer-events: none;
+}

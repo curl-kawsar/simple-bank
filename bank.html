@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <title>Inside bank</title>
+    </head>
+    <body class="bg-gray-300">
+
+        <header class="container mx-auto px-4">
+            <h1 class="text-5xl font-bold text-center my-10">Your <span
+                    class="text-violet-600">Dashboard</span></h1>
+        </header>
+
+        <main class="container mx-auto px-4">
+
+            <section
+                class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <div class="gradient-bg p-8 rounded-xl">
+                    <h4 class="text-3xl font-bold text-white">Deposit</h4>
+                    <h2 class="text-5xl font-bold text-white">$ <span
+                            id="deposite-amount">00</span>
+                    </h2>
+                </div>
+
+                <div class="gradient-bg2 p-8 rounded-xl">
+                    <h4 class="text-3xl font-bold text-white">Withdraw</h4>
+                    <h2 class="text-5xl font-bold text-white">$ <span
+                            id="Withdraw-amount">00</span></h2>
+                </div>
+
+                <div class="gradient-bg3 p-8 rounded-xl">
+                    <h4 class="text-3xl font-bold text-white">Balance</h4>
+                    <h2 class="text-5xl font-bold text-white">$ <span
+                            id="total-balance">120</span>
+                    </h2>
+                </div>
+
+            </section>
+
+            <section class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                <div class="gradient-bg4 p-8 rounded-xl">
+                    <h4 class="text-2xl font-bold text-white">Enter Deposit
+                        Amount</h4>
+                    <input type="number" id="user-deposite"
+                        class="text-black text-bold w-full sm:w-auto px-4 py-2 mt-6 border rounded-md">
+
+                    <button id="btn-deposite" type="submit"
+                        class="w-full sm:w-auto text-bold bg-blue-500 font-bold text-white mt-4 p-2 rounded-md hover:bg-black transition duration-300">Deposit</button>
+                </div>
+
+                <div class="gradient-bg5 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white font-bold">Enter Withdraw
+                        Amount</h4>
+                    <input type="number" id="user-withdraw"
+                        class="text-black text-bold w-full sm:w-auto px-4 py-2 mt-6 border rounded-md">
+
+                    <button id="btn-withdraw" type="submit"
+                        class="w-full text-black sm:w-auto text-bold bg-blue-500 text-white mt-4 p-2 rounded-md hover:bg-black transition duration-300 font-bold mb-3">Withdraw</button>
+                        
+                </div>
+
+            </section>
+
+        </main>
+
+        <script src="js/deposite.js"></script>
+        <script src="js/withdraw.js"></script>
+    </body>
+</html>
